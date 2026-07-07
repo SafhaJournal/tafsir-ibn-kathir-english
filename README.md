@@ -8,9 +8,9 @@ read, use, embed in apps, and improve.
 · 114 surahs · 6,236 commentary records · English
 
 > **This is a working library, not a finished one.** No claim is made that every rendering is
-> 100% correct. Every passage has been machine-verified against the Arabic (and much of it
-> human-checked), but errors certainly remain — and finding them is a community effort by
-> design. **If you see something wrong, please [open an issue or PR](CONTRIBUTING.md).** One
+> 100% correct. Every passage was verified against the Arabic by an independent examiner, and
+> every issue it flagged was re-checked at the source — but errors certainly remain, and finding
+> them is a community effort by design. **If you see something wrong, please [open an issue or PR](CONTRIBUTING.md).** One
 > correction here fixes it for every reader and every app, forever.
 
 ---
@@ -60,7 +60,7 @@ reviewed, and correctable — which is the standard religious commentary deserve
 | Path | What it is |
 |---|---|
 | **`surahs/`** | Human-readable translation, one file per surah, **English + Arabic side by side.** Browse it right here on GitHub. |
-| **`corpus/ibn-kathir-en-safha.jsonl`** | The machine-readable corpus — one JSON object per commentary block. See [`corpus/README.md`](corpus/README.md). |
+| **`corpus/ibn-kathir-en-safha.jsonl`** | The machine-readable corpus — one JSON object per ayah (6,236 rows). See [`corpus/README.md`](corpus/README.md). |
 | **[`PROVENANCE.md`](PROVENANCE.md)** / `provenance.json` | The copyright & independence record: source, method, and measured evidence that this is not copied. |
 | **[`QUALITY.md`](QUALITY.md)** | Per-surah fidelity scores — honest about where it's strong and where it needs eyes. |
 | **[`CONTRIBUTING.md`](CONTRIBUTING.md)** | How to submit corrections (grounded in the Arabic). |
@@ -92,9 +92,10 @@ Full method and evidence: **[PROVENANCE.md](PROVENANCE.md)**.
 be used, checked, and improved in the open — not held back until some imagined day it is
 flawless.
 
-- **It's AI-generated**, then machine-graded, and surahs 2–77 got an additional line-by-line
-  human-verified fidelity pass. It is **not** a substitute for a qualified scholar's translation,
-  and it should not be treated as one.
+- **It's AI-generated**, then independently machine-graded; for surahs 2–77, every issue the
+  examiner flagged was additionally re-verified against the Arabic source and corrected where
+  genuine. No stage of this pipeline was a scholar's review: it is **not** a substitute for a
+  qualified scholar's translation, and it should not be treated as one.
 - **Errors certainly remain.** Verification catches much, not everything — a rare word, a subtle
   referent, an idiom can still slip through. Where precision matters (rulings especially),
   verify against the Arabic and consult qualified scholars.

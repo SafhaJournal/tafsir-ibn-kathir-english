@@ -1,7 +1,8 @@
 # Corpus format
 
-`ibn-kathir-en-safha.jsonl` — one JSON object per line, one line per commentary block, in
-surah/ayah order. 6,236 records across all 114 surahs.
+`ibn-kathir-en-safha.jsonl` — one JSON object per line, **one line per ayah**, in surah/ayah
+order: 6,236 rows, one for each ayah of the Qur'an, across all 114 surahs. (Ayat that share a
+block of commentary each get their own row carrying that shared block — see below.)
 
 ## Row schema
 
@@ -33,8 +34,9 @@ they all carry the **same** `content` and the same `block_key`. If you are index
 
 ## `status`
 
-`machine` means: AI-translated and machine-graded (surahs 2–77 additionally received a
-human-verified fidelity pass). It has not been through formal scholarly review. If you build a
+`machine` means: AI-translated and machine-graded (for surahs 2–77, every examiner-flagged
+issue was additionally re-verified against the Arabic and corrected where genuine). It has not
+been through formal scholarly review. If you build a
 review workflow, you can advance rows to your own `verified` / `reviewed` states downstream.
 
 ## No quality scores here — by design

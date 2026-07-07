@@ -5,10 +5,10 @@ translation against the **Arabic**. Scores are a guide, not a guarantee — and 
 are welcome (see [CONTRIBUTING.md](CONTRIBUTING.md)).
 
 - Surahs graded: **114/114** · mean fidelity **98.2/100** · all marked publishable by the examiner.
-- Surahs 2–77 also received a line-by-line **human-verified fidelity pass** (✎ below): every examiner-flagged issue was checked against the Arabic and genuine errors corrected. Their listed score is the *pre-polish* number, so true fidelity is at least this high.
+- Surahs 2–77 also received an additional **verified-correction pass** (✎ below): every issue the examiner flagged was independently re-checked against the Arabic source, and genuine errors were corrected (grader false-positives were left as-is). Their listed score is the *pre-polish* number, so true fidelity is at least this high.
 - `overlap` = fraction of 4-word prose sequences shared with the copyrighted reference edition (lower = more independent). See [PROVENANCE.md](PROVENANCE.md).
 
-| Surah | Name | Fidelity | Overlap (4-gram) | Human-polished |
+| Surah | Name | Fidelity | Overlap (4-gram) | Corrected pass |
 |---:|---|---:|---:|:--:|
 | 1 | Al-Fatihah | 100/100 | 0.094 |  |
 | 2 | Al-Baqarah | 95/100 | 0.067 | ✎ |

@@ -156,8 +156,8 @@ reference at all.** The residual overlap concentrates in *unavoidable shared mat
 of Qur'anic verses (scripture both editions render similarly), proper names, isnad chains, and
 standardized Islamic honorific formulas ("the Messenger of Allah", "may Allah be pleased with him")
 — not in Ibn Kathir's expository prose, where independent phrasing shows up as the low containment
-figures above. Per-surah overlap figures are recorded for every ayah in `qa/<surah>.jsonl`
-(`prose_overlap_4gram`) and in `reports/<surah>.json`.
+figures above. Per-surah overlap figures are published in [`QUALITY.md`](QUALITY.md); the
+detailed per-ayah records are retained by the maintainer (Section 7).
 
 ---
 
