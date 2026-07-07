@@ -7,6 +7,12 @@ read, use, embed in apps, and improve.
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 · 114 surahs · 6,236 commentary records · English
 
+> **This is a working library, not a finished one.** No claim is made that every rendering is
+> 100% correct. Every passage has been machine-verified against the Arabic (and much of it
+> human-checked), but errors certainly remain — and finding them is a community effort by
+> design. **If you see something wrong, please [open an issue or PR](CONTRIBUTING.md).** One
+> correction here fixes it for every reader and every app, forever.
+
 ---
 
 ## Why this exists
@@ -80,12 +86,23 @@ reference at all** (mean 4-gram overlap 8.8%). The little overlap that exists is
 shared material — Qur'anic verse wording, proper names, isnad chains, standard honorifics.
 Full method and evidence: **[PROVENANCE.md](PROVENANCE.md)**.
 
-## Honest limitations
+## Honest limitations — read this before relying on the text
+
+**No claim of perfection is made here.** This is a working library: published early so it can
+be used, checked, and improved in the open — not held back until some imagined day it is
+flawless.
 
 - **It's AI-generated**, then machine-graded, and surahs 2–77 got an additional line-by-line
-  human-verified fidelity pass. It is **not** a substitute for a qualified scholar's translation.
+  human-verified fidelity pass. It is **not** a substitute for a qualified scholar's translation,
+  and it should not be treated as one.
+- **Errors certainly remain.** Verification catches much, not everything — a rare word, a subtle
+  referent, an idiom can still slip through. Where precision matters (rulings especially),
+  verify against the Arabic and consult qualified scholars.
 - Quality scores are the automated examiner's; treat them as a guide, not gospel.
-- **Corrections are the whole point** — see below. This is meant to get *better* over time.
+- **Corrections are the whole point.** Every reader who checks a passage against the Arabic
+  makes the library better than any AI pipeline could alone. If you see something — even a
+  small thing — **please say something**: open an issue or PR (see below). This library is
+  meant to get *better* every year, and that only happens with you.
 
 ## Using it
 
