@@ -24,6 +24,31 @@ any copyrighted translation. See **[PROVENANCE.md](PROVENANCE.md)** for the full
 
 If you hit this wall too — here's a way through, and you're welcome to it.
 
+## Why a library, not live generation
+
+There's a second reason this project exists. Apps are increasingly wiring AI straight into
+their products — and for religious text, generating commentary *on the fly* is a real problem.
+Every request is a fresh roll of the dice: the same verse can be explained differently every
+time, sometimes faithfully, sometimes subtly wrong — and when it's wrong, the error vanishes
+with the response. Nobody can review what a thousand users were each individually told. There
+is nothing to check, nothing to cite, nothing to fix.
+
+A static library inverts that:
+
+- **Generated once, verified once, read by everyone.** Every passage here went through the same
+  translation-and-verification pipeline (see [PROVENANCE.md](PROVENANCE.md)) *before*
+  publication — nothing is improvised in production.
+- **Errors are findable and fixable.** The text is public and stable. When someone spots a
+  mistake, one correction fixes it for every app and every future reader (see
+  [CONTRIBUTING.md](CONTRIBUTING.md)). A live model's mistake can't even be found afterward —
+  it just happens again, differently, for someone else.
+- **Apps can pin and cite.** An application shipping this library knows exactly what its users
+  will read, can pin a version, and can point back to this repository's record. *"What did the
+  AI tell my users last month?"* has an answer here. With on-the-fly generation, it has none.
+
+In short: **AI helped build this library; it does not run it.** What you read is fixed,
+reviewed, and correctable — which is the standard religious commentary deserves.
+
 ## What's inside
 
 | Path | What it is |
