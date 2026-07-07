@@ -102,8 +102,8 @@ flawless.
 - Quality scores are the automated examiner's; treat them as a guide, not gospel.
 - **Corrections are the whole point.** Every reader who checks a passage against the Arabic
   makes the library better than any AI pipeline could alone. If you see something — even a
-  small thing — **please say something**: open an issue or PR (see below). This library is
-  meant to get *better* every year, and that only happens with you.
+  small thing — **please say something**: open an issue or PR (see below). This library gets
+  better with every correction, and corrections only come from you.
 
 ## Using it
 
