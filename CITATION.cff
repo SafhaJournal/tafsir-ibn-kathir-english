@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Tafsir Ibn Kathir — English (open, copyright-clean)"
+message: "If you use this dataset, please cite it."
+type: dataset
+authors:
+  - name: "Yvette Z"
+    email: developers@safhajournal.com
+year: 2026
+version: "1.0.0"
+license: CC-BY-4.0
+abstract: >-
+  A complete English translation of Tafsir Ibn Kathir (all 114 surahs),
+  generated independently from the public-domain Arabic via a blind-translation
+  and independent cross-vendor grading pipeline, released under CC BY 4.0. The
+  English is not derived from any copyrighted translation; see PROVENANCE.md for
+  the method and the measured verbatim-overlap evidence of independence.
+keywords:
+  - tafsir
+  - ibn-kathir
+  - quran
+  - arabic
+  - translation
+  - open-data

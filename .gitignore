@@ -1,0 +1,11 @@
+# This is a data-only repository. Nothing secret or copyrighted belongs here.
+# (The copyrighted English reference and API keys live in the build pipeline,
+#  a separate project, and must never be added to this repo.)
+
+.env
+.env.*
+node_modules/
+*.log
+*.err
+.DS_Store
+Thumbs.db

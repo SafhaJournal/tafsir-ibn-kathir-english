@@ -1,0 +1,51 @@
+{
+  "edition_id": "ibn-kathir-en-safha",
+  "version": "v1",
+  "generated_at": "2026-07-07T14:44:00.466Z",
+  "work": {
+    "title": "Tafsir al-Qur'an al-'Azim (Tafsir Ibn Kathir), Arabic, unabridged",
+    "author": "Isma'il ibn Umar ibn Kathir",
+    "author_died": "774 AH / 1373 CE",
+    "source_copyright_status": "public domain worldwide",
+    "digital_source": "QUL resource 22 via spa5k/tafsir_api mirror, edition ar-tafsir-ibn-kathir"
+  },
+  "distributed": {
+    "surahs": 114,
+    "rows": 6236,
+    "corpus_path": "corpus/ibn-kathir-en-safha.jsonl",
+    "readable_path": "surahs/<NNN>-<name>.md (English + Arabic side by side)",
+    "contains_reference_text": false,
+    "rows_contain_grades": false,
+    "grades_note": "grades not published here; per-surah fidelity in QUALITY.md, full grade cards retained by maintainer"
+  },
+  "independence": {
+    "translator_model": "claude-sonnet-5 (opus-4.8 on flagged revisions)",
+    "translator_input": "public-domain Arabic only; no English translation ever provided",
+    "grader_model": "gemini-3.1-pro-preview",
+    "grader_role": "fidelity check vs Arabic; copyrighted English edition used only as a hidden internal reference",
+    "reference_edition_for_grading_only": "en-tafisr-ibn-kathir (spa5k/tafsir_api mirror)",
+    "reference_reproduced_in_output": false,
+    "leak_filter": "redactReferenceLeaks — strips reference wording from grader output",
+    "deterministic_gates": [
+      "verbatim-overlap measuring machine",
+      "em-dash style gate",
+      "foreign-script gate"
+    ]
+  },
+  "overlap_evidence": {
+    "graded_surahs": 114,
+    "prose_4gram_containment": {
+      "mean": 0.0883,
+      "median": 0.088,
+      "max": 0.164
+    },
+    "longest_common_prose_run_words": {
+      "mean": 18.4386,
+      "median": 18,
+      "max": 50
+    },
+    "note": "Residual overlap concentrates in unavoidable shared material (Qur'anic verse wording, proper names, isnad chains, standard honorific formulas), not expository prose.",
+    "per_surah": "see QUALITY.md"
+  },
+  "disclaimer": "Factual/technical provenance record, not legal advice. Have counsel review before relying on it."
+}

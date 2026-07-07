@@ -1,0 +1,52 @@
+name: Translation correction
+description: Report a place where the English does not match the Arabic
+title: "[correction] Surah:Ayah — short summary"
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for improving the translation. **Corrections must be grounded in the Arabic
+        source — not in any copyrighted English translation.** (See CONTRIBUTING.md.)
+  - type: input
+    id: location
+    attributes:
+      label: Location (surah:ayah)
+      placeholder: "2:255"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current English
+      description: Paste the phrase/sentence as it currently reads.
+    validations:
+      required: true
+  - type: textarea
+    id: arabic
+    attributes:
+      label: Arabic anchor
+      description: The Arabic word or phrase the English should reflect.
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction
+      description: Your suggested English.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: The grammatical/lexical basis (root, case, referent, idiom, dictionary, etc.).
+    validations:
+      required: true
+  - type: checkboxes
+    id: cleanroom
+    attributes:
+      label: Clean-room confirmation
+      options:
+        - label: This correction is based on the Arabic source, not copied or paraphrased from a copyrighted English translation.
+          required: true
