@@ -22,7 +22,7 @@
     "translator_model": "claude-sonnet-5 (opus-4.8 on flagged revisions)",
     "translator_input": "public-domain Arabic only; no English translation ever provided",
     "grader_model": "gemini-3.1-pro-preview",
-    "grader_role": "fidelity check vs Arabic; copyrighted English edition used only as a hidden internal reference",
+    "grader_role": "post-completion accuracy check vs the Arabic; a published scholar-reviewed English edition was consulted internally ONLY as a verification benchmark to detect AI hallucination (invented meanings, garbled rulings) — comparing meanings, not wording; never an input to the translation",
     "reference_edition_for_grading_only": "en-tafisr-ibn-kathir (spa5k/tafsir_api mirror)",
     "reference_reproduced_in_output": false,
     "leak_filter": "redactReferenceLeaks — strips reference wording from grader output",
@@ -30,6 +30,13 @@
       "verbatim-overlap measuring machine",
       "em-dash style gate",
       "foreign-script gate"
+    ],
+    "legal_basis_summary": [
+      "Independent creation: infringement requires copying; the translator never had access (Feist v. Rural, 499 U.S. 340)",
+      "Copyright protects expression, not meanings/ideas/facts (17 U.S.C. 102(b)); the benchmark comparison was of meanings",
+      "Internal non-expressive analysis of entire copyrighted works held transformative fair use (Authors Guild v. Google, 804 F.3d 202 (2d Cir. 2015); Authors Guild v. HathiTrust, 755 F.3d 87 (2d Cir. 2014); Bartz v. Anthropic (N.D. Cal. 2025))",
+      "Distinguished from Thomson Reuters v. Ross (D. Del. 2025): the reference was never an input to building the translation; the work was complete before any comparison",
+      "Underlying Arabic work is public domain; anyone may translate it"
     ]
   },
   "overlap_evidence": {

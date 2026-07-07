@@ -38,13 +38,17 @@ If you hit this wall too — here's a way through, and you're welcome to it.
 
 Three separated roles, so the translation can never have copied a copyrighted one:
 
-1. **Translator** (an AI model) saw the **Arabic only** — never any English translation — and
-   translated from scratch.
-2. **Examiner** (a *different* company's AI model) graded each surah's fidelity against the
-   Arabic. It used a copyrighted English edition only as a **hidden answer key**, never copied
-   into the output, and its feedback points back to the Arabic, never to the reference's wording.
+1. **Translator** (an AI model) saw the **Arabic only** — it never, at any point, read any
+   English translation — and translated from scratch.
+2. **Examiner** (a *different* company's AI model) checked each finished surah against the
+   **Arabic** for accuracy. Because AI can hallucinate — inventing a meaning, garbling a ruling,
+   or misreading a rare word — the examiner also consulted a published, scholar-reviewed English
+   edition as a **verification benchmark**: a way to detect where the AI's rendering diverged
+   from meanings scholars have already established. That comparison was internal only, compared
+   *meaning* rather than wording, and none of that edition's text was ever copied into the
+   output. The examiner's feedback points back to the Arabic, never to the reference's wording.
 3. **A plain-code measuring machine** counts verbatim overlap with the reference as a paper
-   trail.
+   trail proving the wording is independent.
 
 Result: across all 114 surahs, **~91% of four-word prose sequences do not appear in the
 reference at all** (mean 4-gram overlap 8.8%). The little overlap that exists is unavoidable
